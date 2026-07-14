@@ -1,5 +1,10 @@
 # 📊 PR.4 Functional Treat – Data Analyzer and Transformer
 
+## 🎥 Project Demo Video
+
+**Video Link:**
+video Link:[https://drive.google.com/file/d/1paSTs6hbvUgp1SjWFaJUwIccC2vGJlPf/view?usp=sharing]
+
 ## 📖 Project Description
 
 The Data Analyzer and Transformer is a Python menu-driven application that allows users to perform different data analysis and transformation operations on 1D lists.
@@ -89,10 +94,7 @@ The project demonstrates the use of Python built-in functions, user-defined func
 ![output](Output3.png)
 ![output](Output4.png)
 
-## 🎥 Project Demo Video
 
-**Video Link:**
-video Link:[https://drive.google.com/file/d/1paSTs6hbvUgp1SjWFaJUwIccC2vGJlPf/view?usp=sharing]
 ## 📌 Learning Outcomes
 
 This project helped me learn:
