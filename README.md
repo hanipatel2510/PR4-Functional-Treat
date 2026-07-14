@@ -91,7 +91,10 @@ The project demonstrates the use of Python built-in functions, user-defined func
 ---
 
 ## 📸 Output Screenshots
-
+![output](Output1.png)
+![output](Output2.png)
+![output](Output3.png)
+![output](Output4.png)
 
 ## 🎥 Project Demo Video
 
