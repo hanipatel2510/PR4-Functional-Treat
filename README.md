@@ -3,16 +3,16 @@
 
 ## 📖 Project Description
 
-The Data Analyzer and Transformer is a Python menu-driven application that allows users to perform different data analysis and transformation operations on 1D and 2D lists.
+The Data Analyzer and Transformer is a Python menu-driven application that allows users to perform different data analysis and transformation operations on 1D lists.
 
-The project demonstrates the use of Python built-in functions, user-defined functions, recursion, lambda functions, sorting, global variables, *args, **kwargs, and return multiple values.
+The project demonstrates the use of Python built-in functions, user-defined functions, recursion, lambda functions, sorting, global variables, *args,  and return multiple values.
 
 ---
 
 ## ✨ Features
 
 - Menu-driven interface
-- Input 1D or 2D list
+- Input 1D list
 - Built-in functions
   - len()
   - sum()
@@ -22,7 +22,6 @@ The project demonstrates the use of Python built-in functions, user-defined func
 - Factorial using Recursion
 - Lambda with filter() and map()
 - Sorting (Ascending & Descending)
-- Dataset Summary using **kwargs
 - Global variable implementation
 - Return multiple values from function
 - Function documentation using __doc__
@@ -43,7 +42,7 @@ The project demonstrates the use of Python built-in functions, user-defined func
 ```
 ├── pr4_functional_treat.py
 ├── README.md
-├── screenshots/
+├── screenshots
 ```
 
 ---
@@ -51,7 +50,7 @@ The project demonstrates the use of Python built-in functions, user-defined func
 ## ▶️ How to Run
 
 1. Open the project in VS Code.
-2. Run the `main.py` file.
+2. Run the `pr4_functional_treat.py` file.
 3. Select options from the menu.
 4. Enter 1D  data.
 5. Perform analysis and transformations.
@@ -65,11 +64,6 @@ The project demonstrates the use of Python built-in functions, user-defined func
 - Sum
 - Minimum
 - Maximum
-
-### User Defined Functions
-- Average
-- Unique Values
-- Duplicate Values
 
 ### Recursion
 - Factorial
@@ -111,7 +105,7 @@ This project helped me learn:
 - Recursion
 - Sorting
 - List Operations
-- *args and **kwargs
+- *args 
 - Global Keyword
 - Return Multiple Values
 - Documentation (__doc__)
