@@ -19,14 +19,12 @@ The project demonstrates the use of Python built-in functions, user-defined func
   - min()
   - max()
 - Calculate average using UDF
-- Find unique and duplicate values
 - Factorial using Recursion
 - Lambda with filter() and map()
 - Sorting (Ascending & Descending)
 - Dataset Summary using **kwargs
 - Global variable implementation
 - Return multiple values from function
-- Display 2D list in grid format
 - Function documentation using __doc__
 
 ---
@@ -55,7 +53,7 @@ The project demonstrates the use of Python built-in functions, user-defined func
 1. Open the project in VS Code.
 2. Run the `main.py` file.
 3. Select options from the menu.
-4. Enter 1D or 2D data.
+4. Enter 1D  data.
 5. Perform analysis and transformations.
 
 ---
