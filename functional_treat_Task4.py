@@ -20,15 +20,11 @@ def display_data_func():
         print("Error! List is empty.")
         return
     # built in function
-    total = len(list1)
+    total_element = len(list1)
     minimum = min(list1)
     maximum = max(list1)
     total_sum = sum(list1)
-    average = total_sum / total
-
-    # update global variables
-    total_element = total
-    avg_value = average
+    avg_value = total_sum / total_element
 
     print("\nData summary:")
     print(f" - Total elements: {total}")
@@ -78,7 +74,6 @@ def sort_data():
     if sort_num1 == 1:
         list1.sort()
         print(f"\nSorted Data in Ascending order: \n{ ', ' .join(map(str, list1))}")
-        # print(", ".join(map(str, list1)))
     elif sort_num1 == 2:
         list1.sort(reverse=True)
         print(f"\nSorted Data in Descending order: \n{', '.join(map(str, list1))}")
