@@ -2,17 +2,21 @@ list1 = []
 total_element = 0
 avg_value = 0.0
 
-
 # case 1
 def funct1():
     """Inputs a 1D list/array from the user."""
     global list1
     user1 = input("\nEnter data for a 1d array (separated by spaces):\n")
-    list1 = [int(x) for x in user1.split()]
+    duplicate_value1 = [int(x) for x in user1.split()]
+    list1=list(set(duplicate_value1))
     print("\nData has been stored successfully!")
 
 
 # case 2
+def print_characteristics(**kwargs):
+    """Prints a summary of dataset characteristics using **kwargs."""
+    for key, value in kwargs.items():
+        print(f" - {key.replace('_', ' ').title()}: {value}")
 def display_data_func():
     """Demonstrates usage of built-in functions to display basic statistics."""
     global total_element, avg_value
@@ -25,15 +29,16 @@ def display_data_func():
     maximum = max(list1)
     total_sum = sum(list1)
     avg_value = total_sum / total_element
-
     print("\nData summary:")
-    print(f" - Total elements: {total_element}")
-    print(f" - Minimum value: {minimum}")
-    print(f" - Maximum value: {maximum}")
-    print(f" - Sum of all values: {total_sum}")
-    print(f" - Average value: {avg_value:.2f}")
+    print_characteristics(
+        total_elements=total_element,
+        minimum_value=minimum,
+        maximum_value=maximum,
+        sum_of_all_values=total_sum,
+        average_value=f"{avg_value:.2f}"
+    )
 
-# case3
+# case3 
 def factorial_recursion_func(n):
     """Calculates the factorial of a number using recursion."""
     if n == 0 or n == 1:
@@ -92,7 +97,7 @@ def  dataset_func(*args):
 
     return minimum, maximum, total_sum, average
 def display_data(*args):
-    """Displays multiple statistics of the dataset."""    
+    """Displays multiple statistics of the dataset."""
     value1=dataset_func(*args)
     if value1 is None:
         print("\nDataset is empty! please enter data first.")
@@ -103,8 +108,10 @@ def display_data(*args):
     print(f" - Maximum value: {maximum}")
     print(f" - Sum of all values: {total_sum}")
     print(f" - Average value: {average:.2f}") 
-    
-print("Welcome to the Data Analyzer and Transformer Program")
+
+
+print("Welcome to the Data Analyzer and Transformer Program!")
+
 while True:
     print("\nMain Menu:")
     print("1. Input Data")
@@ -114,12 +121,12 @@ while True:
     print("5. Sort Data")
     print("6. Display Dataset Statistics (Return Multiple Values)")
     print("7. Exit Program")
-    
+
     choice = int(input("Please enter your choice: "))
 
     match choice:
         case 1:
-            print(func1.__doc__)
+            print(funct1.__doc__)
             funct1()
         case 2:
             print(display_data_func.__doc__)
