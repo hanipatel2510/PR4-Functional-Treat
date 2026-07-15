@@ -82,6 +82,7 @@ def sort_data():
 
 # case 6
 def  dataset_func(*args):
+    """Return Multiple statistics of the Dataset."""
     if not args:
         return None
     minimum=min(args)
@@ -91,6 +92,7 @@ def  dataset_func(*args):
 
     return minimum, maximum, total_sum, average
 def display_data(*args):
+    """Displays multiple statistics of the dataset."""    
     value1=dataset_func(*args)
     if value1 is None:
         print("\nDataset is empty! please enter data first.")
@@ -103,37 +105,39 @@ def display_data(*args):
     print(f" - Average value: {average:.2f}") 
 
 print("Welcome to the Data Analyzer and Transformer Program")
-
-while True:
-    print("\nMain Menu:")
-    print("1. Input Data")
-    print("2. Display Data Summary (Built-in Functions)")
-    print("3. Calculate Factorial (Recursion)")
-    print("4. Filter Data by Threshold (Lambda Function)")
-    print("5. Sort Data")
-    print("6. Display Dataset Statistics (Return Multiple Values)")
-    print("7. Exit Program")
+def main():
+    while True:
+        print("\nMain Menu:")
+        print("1. Input Data")
+        print("2. Display Data Summary (Built-in Functions)")
+        print("3. Calculate Factorial (Recursion)")
+        print("4. Filter Data by Threshold (Lambda Function)")
+        print("5. Sort Data")
+        print("6. Display Dataset Statistics (Return Multiple Values)")
+        print("7. Exit Program")
+        
+        choice = int(input("Please enter your choice: "))
     
-    choice = int(input("Please enter your choice: "))
-
-    match choice:
-        case 1:
-            funct1()
-        case 2:
-            display_data_func()
-        case 3:
-            factorial_input_func()
-        case 4:
-            filter_func()
-        case 5:
-            sort_data()
-        case 6:
-            if not list1:
-                print("\nDataset is empty! Please input data .")
-            else:
-                display_data(*list1)
-        case 7:  
-            print("\nThank you for using the Data Analyzer and Transformer Program. Goodbye!")
-            break
-        case _:  
-            print("\nInvalid number! Please enter a number between 1 and 7.") 
+        match choice:
+            case 1:
+                funct1()
+            case 2:
+                display_data_func()
+            case 3:
+                factorial_input_func()
+            case 4:
+                filter_func()
+            case 5:
+                sort_data()
+            case 6:
+                if not list1:
+                    print("\nDataset is empty! Please input data .")
+                else:
+                    display_data(*list1)
+            case 7:  
+                print("\nThank you for using the Data Analyzer and Transformer Program. Goodbye!")
+                break
+            case _:  
+                print("\nInvalid number! Please enter a number between 1 and 7.") 
+if __name__ == '__main__':
+    main()
