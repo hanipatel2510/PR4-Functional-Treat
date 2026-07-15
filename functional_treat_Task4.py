@@ -27,11 +27,11 @@ def display_data_func():
     avg_value = total_sum / total_element
 
     print("\nData summary:")
-    print(f" - Total elements: {total}")
+    print(f" - Total elements: {total_element}")
     print(f" - Minimum value: {minimum}")
     print(f" - Maximum value: {maximum}")
     print(f" - Sum of all values: {total_sum}")
-    print(f" - Average value: {average:.2f}")
+    print(f" - Average value: {avg_value:.2f}")
 
 # case3
 def factorial_recursion_func(n):
