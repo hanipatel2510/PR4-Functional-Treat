@@ -103,9 +103,8 @@ def display_data(*args):
     print(f" - Maximum value: {maximum}")
     print(f" - Sum of all values: {total_sum}")
     print(f" - Average value: {average:.2f}") 
-
-print("Welcome to the Data Analyzer and Transformer Program")
 def main():
+    print("Welcome to the Data Analyzer and Transformer Program")
     while True:
         print("\nMain Menu:")
         print("1. Input Data")
