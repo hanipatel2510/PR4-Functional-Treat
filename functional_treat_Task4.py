@@ -28,13 +28,14 @@ def display_data_func():
     global total_element, avg_value
     if len(list1) == 0:
         print("Error! List is empty.")
-        return
-    # built in function
+        return    
+    # built in function 
     total_element = len(list1)
     minimum = min(list1)
     maximum = max(list1)
     total_sum = sum(list1)
     avg_value = total_sum / total_element
+    
     print("\nData summary:")
     print_characteristics(
         total_elements=total_element,
@@ -51,7 +52,6 @@ def factorial_recursion_func(n):
         return 1
     else:
         return n * factorial_recursion_func(n - 1)
-
 
 def factorial_input_func():
     """Handles user interaction for calculating factorial."""
@@ -115,9 +115,7 @@ def display_data(*args):
     print(f" - Sum of all values: {total_sum}")
     print(f" - Average value: {average:.2f}") 
 
-
 print("Welcome to the Data Analyzer and Transformer Program!")
-
 while True:
     print("\nMain Menu:")
     print("1. Input Data")
