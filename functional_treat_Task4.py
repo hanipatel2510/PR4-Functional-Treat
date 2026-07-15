@@ -3,19 +3,20 @@ total_element = 0
 avg_value = 0.0
 
 # case 1
+
 def funct1():
-    """Inputs a 1D list/array from the user."""
-    global list1
 
-    user1 = input("\nEnter data for a 1D array (separated by spaces):\n")
-    duplicate_value1 = [int(x) for x in user1.split()]
+"""Inputs a 1D list/array from the user."""
 
-    list1 = []
-    for i in duplicate_value1:
-        if i not in list1:
-            list1.append(i)
+global list1
 
-    print("\nData has been stored successfully!")
+user1 = input("\nEnter data for a 1d array (separated by spaces):\n")
+
+duplicate_value1 = [int(x) for x in user1.split()]
+
+list1=list(set(duplicate_value1))
+
+print("\nData has been stored successfully!")list1 = []
 
 # case 2
 def print_characteristics(**kwargs):
