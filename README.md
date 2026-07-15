@@ -9,7 +9,7 @@ video Link:[https://drive.google.com/file/d/1paSTs6hbvUgp1SjWFaJUwIccC2vGJlPf/vi
 
 The Data Analyzer and Transformer is a Python menu-driven application that allows users to perform different data analysis and transformation operations on 1D lists.
 
-The project demonstrates the use of Python built-in functions, user-defined functions, recursion, lambda functions, sorting, global variables, *args,  and return multiple values.
+The project demonstrates the use of Python built-in functions, user-defined functions, recursion, lambda functions, sorting, global variables, *args, **kwargs and return multiple values.
 
 ---
 
@@ -23,6 +23,8 @@ The project demonstrates the use of Python built-in functions, user-defined func
   - min()
   - max()
 - Calculate average using UDF
+- Find unique and duplicate values
+- Dataset Summary using **kwargs
 - Factorial using Recursion
 - Lambda with filter() and map()
 - Sorting (Ascending & Descending)
@@ -68,7 +70,10 @@ The project demonstrates the use of Python built-in functions, user-defined func
 - Sum
 - Minimum
 - Maximum
-
+- Average
+- Duplicate values
+- Unique value
+  
 ### Recursion
 - Factorial
 
@@ -89,10 +94,10 @@ The project demonstrates the use of Python built-in functions, user-defined func
 ---
 
 ## 📸 Output Screenshots
-![output](Output1.png)
-![output](Output2.png)
-![output](Output3.png)
-![output](Output4.png)
+![output](Output1-Task4.png)
+![output](Output2-Task4.png)
+![output](Output3-Task4.png)
+![output](Output4-Task4.png)
 
 
 ## 📌 Learning Outcomes
@@ -106,7 +111,7 @@ This project helped me learn:
 - Recursion
 - Sorting
 - List Operations
-- *args 
+- *args and **kwargs
 - Global Keyword
 - Return Multiple Values
 - Documentation (__doc__)
